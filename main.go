@@ -12,7 +12,7 @@ import (
 func main() {
 	args := os.Args
 	if len(args) == 1 {
-		panic(errors.New("please app package names"))
+		panic(errors.New("package names are required as args"))
 	}
 
 	r := mux.NewRouter()
